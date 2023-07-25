@@ -1,0 +1,34 @@
+{
+  "name": "react-component-package",
+  "version": "1.0.0",
+  "description": "Starter for react component npm package",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "type": "module",
+  "repository": "https://github.com/izmaelmag/react-component-package",
+  "author": "Ismail Magomedov <20561501+izmaelmag@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && rollup -c --bundleConfigAsCjs"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.27",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.16",
+    "rollup": "^3.26.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.6.1"
+  }
+}
